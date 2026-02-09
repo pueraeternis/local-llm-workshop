@@ -3,6 +3,7 @@ __pycache__/
 *.py[codz]
 *$py.class
 unsloth_compiled_cache
+models
 
 # C extensions
 *.so

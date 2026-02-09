@@ -1,7 +1,7 @@
 services:
   ollama:
     image: ollama/ollama:latest
-    container_name: rag_ollama
+    container_name: ollama
     ports:
       - "11434:11434"
     volumes:
@@ -14,8 +14,6 @@ services:
               count: 1
               capabilities: [gpu]
     restart: always
-    # Опционально: сразу загрузить модель при старте, если нужно, 
-    # но лучше мы сделаем это руками в уроке для наглядности.
 
 volumes:
   ollama_storage:
